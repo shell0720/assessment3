@@ -1,0 +1,21 @@
+<form name="heroEntry">
+  <lable>Alias</lable>
+  <input ng-model="hero.alias" />
+
+  <lable>First Name</lable>
+  <input ng-model="hero.first_name" />
+
+  <lable>Last Name</lable>
+  <input ng-model="hero.last_name" />
+
+  <lable>City</lable>
+  <input ng-model="hero.city" />
+
+  <lable>Super Power</lable>
+  <select ng-model="hero.power_name" />
+    <option ng-repeat="power in powers">
+      {{power}}
+    </option>
+  </select>
+  <button ng-click="submitHero(hero)">Submit</button>
+</form>
